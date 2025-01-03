@@ -1,0 +1,89 @@
+/*mobile first*/
+
+.cabecalho {
+  background-color: #2B8A86;
+  color: #EDF7F6; 
+}
+
+.cabecalho__navegacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 10px;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1rem;
+  color: #EDF7F6;
+}
+
+/*cadastro e login*/
+.navegacao__menu__links_autenticacao {
+  display: flex;
+  gap: 10px;
+}
+
+.btn__cadastro {
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0; 
+  background: none;
+  color: #EDF7F6;
+  font-size: 1rem;
+}
+
+.btn__cadastro:hover {
+  background-image: linear-gradient(to bottom right, #45c270, #21cdc3);
+  color: #025b37;
+  font-weight: bold;
+}
+
+.btn__login {
+  background: none;
+  color: #EDF7F6;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  font-size: 1rem;
+}
+
+.btn__login:hover {
+  background-image: linear-gradient(to bottom right, #45c270, #21cdc3);
+  color: #025b37;
+  font-weight: bold;
+}
+
+/*menu voluntarios e vagas*/
+.navegacao__menu__links {
+  display: flex;
+  gap: 20px;
+}
+
+.navegacao__menu__link a {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navegacao__menu__link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*telas maiores*/
+@media (min-width: 768px) {
+  .cabecalho__navegacao {
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .navegacao__menu__links_autenticacao {
+    order: 1;
+  }
+}
