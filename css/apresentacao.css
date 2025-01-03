@@ -1,0 +1,12 @@
+.apresentacao{   
+    background-color:#F1F1EF; 
+}
+
+.apresentacao__imagem__container{
+    background-image: url(../assets/img/volunteer.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;    
+    margin: 0 auto;  
+}
