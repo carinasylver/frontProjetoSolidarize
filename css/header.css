@@ -37,8 +37,7 @@
 }
 
 .btn__cadastro:hover {
-  background-image: linear-gradient(to bottom right, #45c270, #21cdc3);
-  color: #025b37;
+  background-color: #F16457; 
   font-weight: bold;
 }
 
@@ -53,9 +52,9 @@
 }
 
 .btn__login:hover {
-  background-image: linear-gradient(to bottom right, #45c270, #21cdc3);
-  color: #025b37;
+  background-color: #21cdc3;
   font-weight: bold;
+  
 }
 
 /*menu voluntarios e vagas*/
@@ -72,7 +71,6 @@
 .navegacao__menu__link a:hover {
   text-decoration: underline;
 }
-
 
 
 /*telas maiores*/
