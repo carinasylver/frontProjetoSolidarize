@@ -52,8 +52,9 @@
 }
 
 .btn__login:hover {
-  background-color: #21cdc3;
+  /* background-color: #21cdc3; */
   font-weight: bold;
+  background-image: linear-gradient(to bottom right, #2B8A86, #21cdc3);
   
 }
 
