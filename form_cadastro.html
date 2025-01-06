@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Cadastro</title>
+</head>
+<body>
+  <main class="cadastro">
+  <div class="container__formularioCadastro">
+    <h1 class="cadastro__titulo">Cadastre-se</h1>
+    <form class="formCadastro" action="/" method="POST">
+      <fieldset class="formulario__campo">
+        <label>Nome</label>
+        <input class="formcadastro__input"
+          name="nome"
+          id="nome"
+          type="name"
+          placeholder="Nome"
+          minlength="3"
+          required
+        />
+      </fieldset>     
+      <fieldset class="formulario__campo">
+        <label>Email</label>
+        <input
+          class="formcadastro__input"
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Insira seu email"
+          minlength="4"
+          required
+        />
+      </fieldset>
+      <fieldset class="formulario__campo">
+        <label for="bairro">Bairro</label>
+        <select id="bairro" name="bairro" required>
+          <option value="">Selecione um Bairro</option>
+          <option value="areal">Areal</option>
+          <option value="centro">Centro</option>
+          <option value="fragata">Fragata</option>
+          <option value="laranjal">Laranjal</option>
+          <option value="guabiroba">Guabiroba</option>
+          <option value="porto">Três Vendas</option>
+        </select>
+      </fieldset>
+      <button class="formcadastro__botao" id="enviar" type="submit">
+        Continuar
+      </button>
+    </form>
+  </div>
+</main>
+</body>
+</html>
+
+
+

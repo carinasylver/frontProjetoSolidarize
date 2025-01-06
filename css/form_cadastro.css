@@ -1,0 +1,60 @@
+.cadastro {
+	display: flex;
+	align-items: center;  
+	height: 100vh;	
+}
+
+.container__formularioCadastro{	
+	width: 100%;  
+  padding: 20px;
+	margin: 10px;  
+  border-radius: 10px; 
+	background-color: #ffffff;
+}
+
+.cadastro__titulo {
+  text-align: center;
+  padding: 20px;
+	color: #243130;	
+	font-size: 1.2rem;
+	letter-spacing: 2px;	
+}
+
+.formulario__campo {
+  display:flex;
+  flex-direction: column; 
+  border: 0px;
+}
+
+.formulario__campo label{
+	margin-bottom: 5px;
+}
+
+.formcadastro__input {
+  padding: 10px;
+  margin: 0 0 10px;
+}
+
+.formcadastro__botao {
+	display: block;
+  margin-top: 20px;
+  padding: 12px 24px;
+	border-radius: 24px;
+	width: 100%;
+	border: 0;
+	background-image: linear-gradient(to bottom right, #2B8A86, #21cdc3);
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+
+/*tela tablets e maiores*/
+@media (min-width: 600px) {
+  .container__formularioCadastro{	
+		max-width: 400px;
+		margin: 0 auto; 		
+	}
+}
+
