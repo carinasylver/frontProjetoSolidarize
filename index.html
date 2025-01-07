@@ -28,7 +28,9 @@
           <h1><i class="fa-solid fa-handshake-angle"></i>Solidarize</h1>
         </div>
         <div class="navegacao__menu__links_autenticacao">
-          <a href="form_cadastro.html" class="btn__cadastro">Cadastre-se agora</a>
+          <button popovertarget="modal" class="btn__cadastro">
+            Cadastre-se agora
+          </button>
           <a href="#" class="btn__login">Entrar</a>
         </div>
         <ul class="navegacao__menu__links">
@@ -54,24 +56,27 @@
             Junte-se a nós! <span class="destaque1">Cadastre-se</span> e
             encontre oportunidades de
             <span class="destaque2">voluntariado</span>
-          </h1>          
-          <button class="apresentacao__btn__cadastro">Cadastre-se</button>          
+          </h1>
+          <button popovertarget="modal" class="apresentacao__btn__cadastro">Cadastre-se</button>
+    
         </div>
         <div class="apresentacao__imagem">
           <img src="/assets/img/volunteer.png" alt="" />
         </div>
       </section>
+
       <section class="causas" id="causas" aria-label="causas">
         <h1 class="causas__titulo">causas</h1>
         <p class="causas__texto">
-          busque uma causa para voluntariar de acordo com o seu
-          interesse
+          busque uma causa para voluntariar de acordo com o seu interesse
         </p>
         <div class="causas__container">
           <div class="causas__item">
             <div class="causas__item__conteudo">
               <img src="./assets/img/causas/childrens.jpg" alt="" />
-              <p class="causas__item__conteudo__titulo">Crianças e adolescentes</p>
+              <p class="causas__item__conteudo__titulo">
+                Crianças e adolescentes
+              </p>
             </div>
           </div>
           <div class="causas__item">
@@ -92,7 +97,9 @@
                 src="./assets/img/causas/direitos-civis-acoes-sociais.jpg"
                 alt=""
               />
-              <p class="causas__item__conteudo__titulo">Direitos civis e ações sociais</p>
+              <p class="causas__item__conteudo__titulo">
+                Direitos civis e ações sociais
+              </p>
             </div>
           </div>
           <div class="causas__item">
@@ -101,54 +108,100 @@
                 src="./assets/img/causas/assistencia-saude-humanitaria.jpg"
                 alt=""
               />
-              <p class="causas__item__conteudo__titulo">Saúde e assistência humanitária</p>
+              <p class="causas__item__conteudo__titulo">
+                Saúde e assistência humanitária
+              </p>
             </div>
           </div>
           <div class="causas__item">
             <div class="causas__item__conteudo">
-              <img
-                src="./assets/img/causas/alivio-pobreza.jpg"
-                alt=""
-              />
+              <img src="./assets/img/causas/alivio-pobreza.jpg" alt="" />
               <p class="causas__item__conteudo__titulo">Alívio à pobreza</p>
             </div>
           </div>
           <div class="causas__item">
             <div class="causas__item__conteudo">
-              <img
-                src="./assets/img/causas/senior.jpg"
-                alt=""
-              />
+              <img src="./assets/img/causas/senior.jpg" alt="" />
               <p class="causas__item__conteudo__titulo">Idosos</p>
             </div>
           </div>
           <div class="causas__item">
             <div class="causas__item__conteudo">
-              <img
-                src="./assets/img/causas/protecao-animal.jpg"
-                alt=""
-              />
+              <img src="./assets/img/causas/protecao-animal.jpg" alt="" />
               <p class="causas__item__conteudo__titulo">Proteção animal</p>
             </div>
           </div>
           <div class="causas__item">
             <div class="causas__item__conteudo">
-              <img
-                src="./assets/img/causas/educacao.jpg"
-                alt=""
-              />
+              <img src="./assets/img/causas/educacao.jpg" alt="" />
               <p class="causas__item__conteudo__titulo">Educação</p>
             </div>
           </div>
           <div class="causas__item">
             <div class="causas__item__conteudo">
-              <img
-                src="./assets/img/causas/meio-ambiente.jpg"
-                alt=""
-              />
+              <img src="./assets/img/causas/meio-ambiente.jpg" alt="" />
               <p class="causas__item__conteudo__titulo">Meio ambiente</p>
             </div>
-          </div>          
+          </div>
+        </div>
+      </section>
+      <section class="cadastro" id="cadastro">
+        <div class="modal" id="modal" popover="manual">
+          <button
+            popovertarget="modal"
+            popovertargetaction="hide"
+            class="iconFechar"
+          >
+            x
+          </button>
+          <h1 class="cadastro__titulo">Cadastre-se</h1>
+          <form class="formCadastro" action="/" method="POST">
+            <fieldset class="formulario__campo">
+              <label>Nome</label>
+              <input
+                class="formcadastro__input"
+                name="nome"
+                id="nome"
+                type="name"
+                placeholder="Nome"
+                minlength="3"
+                required
+              />
+            </fieldset>
+            <fieldset class="formulario__campo">
+              <label>Email</label>
+              <input
+                class="formcadastro__input"
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Insira seu email"
+                minlength="4"
+                required
+              />
+            </fieldset>
+            <fieldset class="formulario__campo">
+              <label for="bairro">Bairro</label>
+              <select id="bairro" name="bairro" required>
+                <option value="">Selecione um Bairro</option>
+                <option value="areal">Areal</option>
+                <option value="centro">Centro</option>
+                <option value="fragata">Fragata</option>
+                <option value="laranjal">Laranjal</option>
+                <option value="guabiroba">Guabiroba</option>
+                <option value="porto">Três Vendas</option>
+              </select>
+            </fieldset>
+            <button
+              class="formcadastro__botao"
+              id="enviar"
+              type="submit"
+              popovertarget="modal"
+              popovertargetaction="hide"
+            >
+              Continuar
+            </button>
+          </form>
         </div>
       </section>
     </main>

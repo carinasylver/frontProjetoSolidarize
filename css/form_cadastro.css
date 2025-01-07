@@ -1,20 +1,30 @@
-.cadastro {
-	display: flex;
-	align-items: center;  
-	height: 100vh;	
+/*mobile first*/
+
+#modal{
+	border:none;
+	padding: 1rem;
+	border-radius: 2rem;
+	min-width: 300px;
+	margin: auto; 
+
+
+	button.iconFechar{
+		background: none;
+		border: none;
+		float: right;
+		cursor: pointer;
+		filter: grayscale();
+	}     
 }
 
-.container__formularioCadastro{	
-	width: 100%;  
-  padding: 20px;
-	margin: 10px;  
-  border-radius: 10px; 
-	background-color: #ffffff;
+#modal::backdrop { 
+	background: #0009; 
 }
+
 
 .cadastro__titulo {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 	color: #243130;	
 	font-size: 1.2rem;
 	letter-spacing: 2px;	
@@ -23,8 +33,9 @@
 .formulario__campo {
   display:flex;
   flex-direction: column; 
-  border: 0px;
+  border: none;
 }
+
 
 .formulario__campo label{
 	margin-bottom: 5px;
@@ -52,9 +63,12 @@
 
 /*tela tablets e maiores*/
 @media (min-width: 600px) {
-  .container__formularioCadastro{	
-		max-width: 400px;
-		margin: 0 auto; 		
+	#modal{
+		min-width: 400px;    
 	}
+  
 }
+
+
+
 
