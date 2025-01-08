@@ -43,7 +43,7 @@
 
 .formcadastro__input {
   padding: 10px;
-  margin: 0 0 10px;
+  /* margin: 0 0 10px; */
 }
 
 .formcadastro__botao {
@@ -58,6 +58,12 @@
 	font-weight: 600;
 	font-size: 1rem;
 	cursor: pointer;
+}
+
+/*validacao form*/
+.mensagem-erro {
+	color: red;
+	margin: 10px 0;
 }
 
 

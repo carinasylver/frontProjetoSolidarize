@@ -64,7 +64,6 @@
           <img src="/assets/img/volunteer.png" alt="" />
         </div>
       </section>
-
       <section class="causas" id="causas" aria-label="causas">
         <h1 class="causas__titulo">causas</h1>
         <p class="causas__texto">
@@ -145,7 +144,8 @@
           </div>
         </div>
       </section>
-      <section class="cadastro" id="cadastro">
+
+      <section class="cadastro" id="cadastro" aria-label="causas">
         <div class="modal" id="modal" popover="manual">
           <button
             popovertarget="modal"
@@ -155,21 +155,22 @@
             x
           </button>
           <h1 class="cadastro__titulo">Cadastre-se</h1>
-          <form class="formCadastro" action="/" method="POST">
+          <form class="formCadastro" id="formCadastro" action="/" method="POST" dados-formulario>
             <fieldset class="formulario__campo">
-              <label>Nome</label>
+              <label for="nome">Nome</label>
               <input
-                class="formcadastro__input"
+                class="formcadastro__input" 
                 name="nome"
                 id="nome"
                 type="name"
-                placeholder="Nome"
-                minlength="3"
+                placeholder="Insira seu nome"                
+                minlength="3"               
                 required
               />
+              <span class="mensagem-erro"></span>
             </fieldset>
             <fieldset class="formulario__campo">
-              <label>Email</label>
+              <label for="email">Email</label>
               <input
                 class="formcadastro__input"
                 name="email"
@@ -179,6 +180,20 @@
                 minlength="4"
                 required
               />
+              <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__campo">
+              <label for="senha">Senha</label>
+              <input
+                class="formcadastro__input"
+                name="senha"
+                id="senha"
+                type="password"
+                placeholder="Insira sua senha"
+                minlength="6"
+                required
+              />
+              <span class="mensagem-erro"></span>
             </fieldset>
             <fieldset class="formulario__campo">
               <label for="bairro">Bairro</label>
@@ -191,13 +206,14 @@
                 <option value="guabiroba">Guabiroba</option>
                 <option value="porto">Três Vendas</option>
               </select>
+              <span class="mensagem-erro"></span>
             </fieldset>
+           
             <button
               class="formcadastro__botao"
-              id="enviar"
+              id="enviar"          
               type="submit"
-              popovertarget="modal"
-              popovertargetaction="hide"
+              
             >
               Continuar
             </button>
@@ -205,5 +221,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
