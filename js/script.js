@@ -32,8 +32,7 @@ const mensagens = {
   },
   bairro: {
       valueMissing: "Selecione seu bairro",
-  }
-
+  }  
 }
 
 
@@ -66,11 +65,24 @@ function verificaCampo(campo) {
   } 
 }
 
+
 const submissaoFormulario = document.querySelector('[dados-formulario')
+console.log(submissaoFormulario)
 submissaoFormulario.addEventListener('submit', (e) => {
 
   e.preventDefault() 
+
+  const listaRespostas = {
+    'nome': e.target.elements['nome'].value,
+    'email': e.target.elements['email'].value,
+    'senha': e.target.elements['senha'].value,
+    'bairro': e.target.elements['bairro'].value,
+  }
+
+  localStorage.setItem('cadastro', JSON.stringify(listaRespostas))
+
   alert('confirme seu cadastro por email')
   window.location.href = './index.html'
 
 })
+
