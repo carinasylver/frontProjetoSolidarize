@@ -48,13 +48,11 @@ function verificaCampo(campo) {
           console.log(mensagem);
       }
   });
-
-    
+  
   const mensagemErro = campo.parentNode.querySelector('.mensagem-erro')
  
   const validadorDeInput = campo.checkValidity()  
   console.log(validadorDeInput)
-
     
   if (mensagemErro) {
       if(!validadorDeInput){
@@ -65,10 +63,9 @@ function verificaCampo(campo) {
   } 
 }
 
-
-const submissaoFormulario = document.querySelector('[dados-formulario')
-console.log(submissaoFormulario)
-submissaoFormulario.addEventListener('submit', (e) => {
+const submissaoFormCadastro = document.querySelector('[dados-formularioCadastro')
+// console.log(submissaoFormCadastro)
+submissaoFormCadastro.addEventListener('submit', (e) => {
 
   e.preventDefault() 
 
@@ -85,4 +82,24 @@ submissaoFormulario.addEventListener('submit', (e) => {
   window.location.href = './index.html'
 
 })
+
+const submissaoFormLogin = document.querySelector('[dados-formularioLogin')
+// console.log(submissaoFormLogin)
+submissaoFormLogin.addEventListener('submit', (e) => {
+
+
+  e.preventDefault() 
+
+  const listaRespostas = {
+    'emailLogin': e.target.elements['emailLogin'].value,
+    'senhaLogin': e.target.elements['senhaLogin'].value,
+  }
+
+  localStorage.setItem('login', JSON.stringify(listaRespostas))
+
+  alert('Bem-vindo(a)!')
+  window.location.href = './index.html'
+
+})
+
 

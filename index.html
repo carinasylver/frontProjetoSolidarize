@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <!--icones -> https://fontawesome.com/ -->
     <link
       rel="stylesheet"
@@ -28,10 +27,11 @@
           <h1><i class="fa-solid fa-handshake-angle"></i>Solidarize</h1>
         </div>
         <div class="navegacao__menu__links_autenticacao">
-          <button popovertarget="modal" class="btn__cadastro">
+          <button popovertarget="modal__cadastro" class="btn__cadastro">
             Cadastre-se agora
           </button>
-          <a href="#" class="btn__login">Entrar</a>
+          <button popovertarget="modal__login" class="btn__login">
+            Entrar
         </div>
         <ul class="navegacao__menu__links">
           <li class="navegacao__menu__link">
@@ -145,16 +145,16 @@
         </div>
       </section>
       <section class="cadastro" id="cadastro" aria-label="cadastro">
-        <div class="modal" id="modal" popover="manual">
+        <div class="modal__cadastro" id="modal__cadastro" popover="manual">
           <button
-            popovertarget="modal"
+            popovertarget="modal__cadastro"
             popovertargetaction="hide"
             class="iconFechar"
           >
             x
           </button>
           <h1 class="cadastro__titulo">Cadastre-se</h1>
-          <form class="formCadastro" id="formCadastro" action="/" method="POST" dados-formulario>
+          <form class="formCadastro" id="formCadastro" action="/" method="POST" dados-formularioCadastro>
             <fieldset class="formulario__campo">
               <label for="nome">Nome</label>
               <input
@@ -219,8 +219,57 @@
           </form>
         </div>
       </section>
+      <section class="login" id="login" aria-label="login">
+        <div class="modal__login" id="modal__login" popover="manual">
+          <button
+            popovertarget="modal__login"
+            popovertargetaction="hide"
+            class="iconFechar"
+          >
+            x
+          </button>
+          <h1 class="login__titulo">Login</h1>
+          <form class="formLogin" id="formLogin" action="/" method="POST" dados-formularioLogin>
+            <fieldset class="formulario__campo">
+            </fieldset>
+            <fieldset class="formulario__campo">
+              <label for="email">Email</label>
+              <input
+                class="formLogin__input"
+                name="email"
+                id="emailLogin"
+                type="email"
+                placeholder="Insira seu email"
+                minlength="4"
+                required
+              />
+              <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__campo">
+              <label for="senha">Senha</label>
+              <input
+                class="formLogin__input"
+                name="senha"
+                id="senhaLogin"
+                type="password"
+                placeholder="Insira sua senha"
+                minlength="6"
+                required
+              />
+              <span class="mensagem-erro"></span>
+            </fieldset>        
+            <button
+              class="formLogin__botao"
+              id="logar"          
+              type="submit"
+              
+            >
+              Continuar
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-
     <script src="./js/script.js"></script>
   </body>
 </html>
