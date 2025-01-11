@@ -15,7 +15,7 @@
   /**********************************/
   
   body {
-    height: 100vh;      
+    height: 100dvh;      
     box-sizing: border-box;   
     background-color: #F1F1EF;  
     font-family: 'Raleway';

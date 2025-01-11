@@ -1,0 +1,34 @@
+.cabecalho__pesquisa {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dropdown__menu {
+  color: black;
+  font-weight: 600;
+  padding: 10px; 
+  font-size: 1rem;
+}
+
+.form__pesquisa input {
+  width: 260px;
+  height: 40px;
+  border: 1px solid rgb(225, 222, 222);
+  font-size: 16px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.form__pesquisa__icon::placeholder {
+  font-size: 18px;
+  background: url("/assets/img/icones/search.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/*telas maiores*/
+@media (min-width: 500px) {
+  .cabecalho__pesquisa input {
+    width: 360px;
+  }
+}

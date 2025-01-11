@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- fonte Raleway -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--icones -> https://fontawesome.com/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Solidarize</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="cabecalho__navegacao">
+        <div class="logo">
+          <a href="/index.html">
+            <h1><i class="fa-solid fa-handshake-simple"></i> Solidarize</h1>
+          </a>
+        </div>
+        <div class="navegacao__menu__links_autenticacao">
+          <button popovertarget="modal__cadastro" class="btn__cadastro">
+            Cadastre-se agora
+          </button>
+          <button popovertarget="modal__login" class="btn__login">
+            Entrar
+          </button>
+        </div>
+        <div class="cabecalho__pesquisa">
+          <select id="dropdown__menu" class="dropdown__menu">
+            <option value="OSCs">OSCs</option>
+            <option value="Vagas">Vagas</option>
+            <option value="Voluntários">Voluntários</option>
+          </select>
+          <form class="form__pesquisa" >
+            <input class="form__pesquisa__icon"
+              type="search"
+              placeholder="Pesquisar"
+              id="pesquisar"
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
