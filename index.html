@@ -62,8 +62,12 @@
             encontre oportunidades de
             <span class="destaque2">voluntariado</span>
           </h1>
-          <button popovertarget="modal__cadastro" class="apresentacao__btn__cadastro">Cadastre-se</button>
-    
+          <button
+            popovertarget="modal__cadastro"
+            class="apresentacao__btn__cadastro"
+          >
+            Cadastre-se
+          </button>
         </div>
         <div class="apresentacao__imagem">
           <img src="/assets/img/volunteer.png" alt="" />
@@ -159,16 +163,22 @@
             x
           </button>
           <h1 class="cadastro__titulo">Cadastre-se</h1>
-          <form class="formCadastro" id="formCadastro" action="/" method="POST" dados-formularioCadastro>
+          <form
+            class="formCadastro"
+            id="formCadastro"
+            action="/"
+            method="POST"
+            dados-formularioCadastro
+          >
             <fieldset class="formulario__campo">
               <label for="nome">Nome</label>
               <input
-                class="formcadastro__input" 
+                class="formcadastro__input"
                 name="nome"
                 id="nome"
                 type="name"
-                placeholder="Insira seu nome"                
-                minlength="3"               
+                placeholder="Insira seu nome"
+                minlength="3"
                 required
               />
               <span class="mensagem-erro"></span>
@@ -212,13 +222,8 @@
               </select>
               <span class="mensagem-erro"></span>
             </fieldset>
-           
-            <button
-              class="formcadastro__botao"
-              id="enviar"          
-              type="submit"
-              
-            >
+
+            <button class="formcadastro__botao" id="enviar" type="submit">
               Continuar
             </button>
           </form>
@@ -234,9 +239,14 @@
             x
           </button>
           <h1 class="login__titulo">Login</h1>
-          <form class="formLogin" id="formLogin" action="/" method="POST" dados-formularioLogin>
-            <fieldset class="formulario__campo">
-            </fieldset>
+          <form
+            class="formLogin"
+            id="formLogin"
+            action="/"
+            method="POST"
+            dados-formularioLogin
+          >
+            <fieldset class="formulario__campo"></fieldset>
             <fieldset class="formulario__campo">
               <label for="email">Email</label>
               <input
@@ -262,19 +272,91 @@
                 required
               />
               <span class="mensagem-erro"></span>
-            </fieldset>        
-            <button
-              class="formLogin__botao"
-              id="logar"          
-              type="submit"
-              
-            >
+            </fieldset>
+            <button class="formLogin__botao" id="logar" type="submit">
               Continuar
             </button>
           </form>
         </div>
       </section>
     </main>
+    <footer class="rodape">
+      <div class="rodape__navegacao">
+        <section class="rodape__projeto">
+          <h2 class="rodape__titulo">Solidarize © 2025</h2>
+          <p class="rodape__texto">
+            Somos uma plataforma de impacto social. Ajudamos conectar
+            Voluntários a Organizações Sociais através do voluntariado.
+          </p>
+          <ul class="rodape__redes__links">
+            <a href="https://www.linkedin.com" target="_blank" rel="external">
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </a>
+            <a
+              href="https://www.instagram.com/projeto.solidarizers/"
+              target="_blank"
+              rel="external"
+            >
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="external">
+              <li><i class="fa-brands fa-tiktok"></i></li>
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="external">
+              <li><i class="fa-brands fa-x-twitter"></i></li>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="external">
+              <li><i class="fa-brands fa-facebook"></i></li>
+            </a>
+          </ul>
+        </section>
+        <section class="rodape__links">
+          <h2 class="rodape__titulo">Links Úteis</h2>
+          <ul class="rodape__links">
+            <li class="rodape__links__item">
+              <a href="http://">Perguntas Frequentes</a>
+            </li>
+            <li class="rodape__links__item">
+              <a href="http://">Suporte</a>
+            </li>
+            <li class="rodape__links__item">
+              <a href="http://">Politica de Privacidade</a>
+            </li>
+            <li class="rodape__links__item">
+              <a href="http://">Fale Conosco</a>
+            </li>
+          </ul>
+        </section>
+        <section class="rodape__app__link">
+          <h2 class="rodape__titulo">Baixe nosso Aplicativo</h2>
+          <a
+            href="https://play.google.com"
+            class="rodape__app__link"
+            target="_blank"
+            rel="external"
+          >
+            <img src="./assets/img/icones/google-play.webp" alt="" />
+          </a>
+        </section>
+        <section class="rodape__newsletter">
+          <h2 class="rodape__titulo">Assine nossa Newsletter</h2>
+          <form action="" class="rodape__newsletter__form">
+            <input
+              class="formNewsletter__input"
+              name="emailNewsletter"
+              id="emailNewsletter"
+              type="email"
+              placeholder="E-mail"
+              minlength="4"
+              required
+            />
+            <button class="formNewsletter__btn" id="logar" type="submit">
+              Enviar
+            </button>
+          </form>
+        </section>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
