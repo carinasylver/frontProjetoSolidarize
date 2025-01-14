@@ -1,3 +1,4 @@
+/*mobile first*/
 .cabecalho__pesquisa {
   display: flex;
   flex-wrap: nowrap;
@@ -25,6 +26,49 @@
   background-repeat: no-repeat;
   background-position: right center;
 }
+
+
+
+/*lista de oscs*/
+.oscs {
+  border-radius: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* height: 100vh; */
+}
+
+
+.tabela {
+  background-color: #f7f7f7;
+  margin: 50px 0;
+}
+
+.tabela__cabecalho{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-column: 1 / -1;
+  gap: 20px;
+}
+
+
+.tabela__cabecalho, .tabela__celula-item {
+  padding: 12px;  
+  border-bottom: 1px solid #ddd;
+}
+
+
+.tabela__cabecalho {
+  background-color: #61a16f;
+  color: white;
+}
+
+.tabela__celula{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-column: 1 / -1;  
+}
+
+
 
 /*telas maiores*/
 @media (min-width: 500px) {
