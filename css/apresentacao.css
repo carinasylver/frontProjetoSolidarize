@@ -2,9 +2,8 @@
 .apresentacao {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f1f1ef; 
-  height: 100vh;
-  /* border: 1px solid #1d1c1c; */
+  background-color: #f1f1ef;  
+  border: 1px solid #1d1c1c;
 }
 
 .apresentacao__container {
