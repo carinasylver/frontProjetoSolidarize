@@ -3,7 +3,8 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: #f1f1ef;  
-  border: 1px solid #1d1c1c;
+  /* border: 1px solid #1d1c1c; */
+  min-height: 500px;
 }
 
 .apresentacao__container {
