@@ -36,6 +36,7 @@
   background: none;
   color: #EDF7F6;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn__cadastro:hover {
@@ -50,10 +51,12 @@
   cursor: pointer;
   border: 2px solid #ffffff;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn__login:hover {
   background-image: linear-gradient(to bottom right, #2B8A86, #21cdc3);
+  
   
 }
 
@@ -68,6 +71,7 @@
 .navegacao__menu__link a {
   color: #ffffff;
   padding: 10px;
+  font-weight: 600;
 }
 
 .navegacao__menu__link a:hover {
