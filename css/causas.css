@@ -10,7 +10,7 @@
   color: #243130;
   text-transform: capitalize;
   font-size: 2rem;
-  background-color: #e5e7eb;
+  /* background-color: #e5e7eb; */
   padding: 40px;
 }
 
@@ -29,8 +29,9 @@ p::first-letter {
   grid-template-columns: 1fr;
   align-items: center;
   padding: 5px;
-  margin: 5px;;
-  gap:10px
+  margin: 5px;
+  gap:10px;
+  margin-bottom: 80px;
 }
 
 .causas__item {
