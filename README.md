@@ -26,14 +26,16 @@
 * Login
 * Perfil voluntário
 * Perfil Organição Social
-* Filtro por vagas
+* Filtro por vagas na modalidade presencial e remoto
 * Candidatar-se para vagas
-* Filtro por Organizações Sociais
-* Filtro por voluntários
+* Filtro por Organizações Sociais e causas
+* Filtro por voluntários 
 * Cadastro de Projetos da OSC
 * Cadastro de Vagas
 * Gerenciamento Voluntários
-* Postagem conteúdo
+* Postagem conteúdo 
+* Área de divulgação de eventos
+
 
 ---
 
